@@ -63,41 +63,38 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
         <!-- Tên trang web -->
-        <a class="navbar-brand" href="http://zakart.online/home/tour.html">Zakart.online</a>
+        <a class="navbar-brand" href="http://localhost/BTKT/tour.php">Zakart.online</a>
 
         <!-- Nút kích hoạt offcanvas -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+
 
         <!-- Offcanvas -->
-        <div class="offcanvas offcanvas-start" id="menuOffcanvas">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title">Menu</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-            </div>
+      
+            
             <div class="offcanvas-body">
                 <!-- Các mục menu -->
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="http://zakart.online/home/tour.html">Trang chủ</a>
+                        <a class="nav-link" href="http://localhost/BTKT/tour.php">Trang chủ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="http://zakart.online/home/tourism.php">khu vực hot</a>
+                        <a class="nav-link" href="http://localhost/BTKT/highlighted_area.php">Khu Vực Hot</a>
                     </li>
                     <li class ="nav-item">
-                        <a class = "nav-link" href="http://zakart.online/home/dichvuvisa.php">Giấy tờ visa</a>
+                        <a class = "nav-link" href="http://localhost/BTKT/visa.php">Giấy tờ visa</a>
                     </li>
                     <li class ="nav-item">
-                        <a class = "nav-link" href="http://zakart.online/home/health/test.php">Sức Khỏe</a>
+                        <a class = "nav-link" href="http://localhost/BTKT/festival.php">Lễ Hội Nổi Bật</a>
+                    </li>
+                    <li class ="nav-item">
+                        <a class = "nav-link" href="http://localhost/BTKT/health.php">Sức Khỏe</a>
                     </li>
                 </ul>
             </div>
-        </div>
 
         <!-- Ô tìm kiếm -->
-        <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+        <form class="d-flex" method="GET" action="search.php">
+            <input class="form-control me-2" type="search" name="keyword" placeholder="Tìm kiếm" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Tìm kiếm</button>
         </form>
     </div>
@@ -468,7 +465,7 @@
 </div>
 
 <div class="price-wrapper">
-<span class="price">Giá từ <span class="woocommerce-Price-amount amount"><bdi>34.490.000<span class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span></span>
+<span class="price">Giá từ <span class="woocommerce-Price-amount amount"><b>34.490.000<span class="woocommerce-Price-currencySymbol">&#8363;</span></b></span></span>
 </div>
       </div>
     </div>
@@ -958,7 +955,7 @@
 <script>
 	function showAlert() {
 	  alert("Bạn cần đăng nhập để truy cập");
-	  window.location.href = "https://zakart.online/home/login.php";
+	  window.location.href = "http://localhost/BTKT/login/dangnhap.php";
 	}
 </script>
 </body>
