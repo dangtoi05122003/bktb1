@@ -33,7 +33,7 @@
   }
 ?>
 <body>
-  <section class="vh-100" style="background-color: white;">
+<section class="vh-100" style="background-color: white;">
     <div class="container py-5 h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5">

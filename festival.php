@@ -5,21 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
     
 	<link rel="stylesheet" href="bootstrap.min.css"> <!-- Đường dẫn tới file CSS của Bootstrap -->
   <!--kết đầu dòng-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <style>
-        .navbar {
-          display: flex;
-          justify-content: space-between;
-        }
-    </style>
+
 </head>
 <body>
     <style>
@@ -36,16 +28,11 @@
         <a class="navbar-brand" href="http://localhost/BTKT/tour.php">Zakart.online</a>
 
         <!-- Nút kích hoạt offcanvas -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+
 
         <!-- Offcanvas -->
-        <div class="offcanvas offcanvas-start" id="menuOffcanvas">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title">Menu</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-            </div>
+
+
             <div class="offcanvas-body">
                 <!-- Các mục menu -->
                 <ul class="navbar-nav">
@@ -71,8 +58,8 @@
         </div>
 
         <!-- Ô tìm kiếm -->
-        <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+        <form class="d-flex" method="GET" action="search.php">
+            <input class="form-control me-2" type="search" name="keyword" placeholder="Tìm kiếm" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Tìm kiếm</button>
         </form>
     </div>

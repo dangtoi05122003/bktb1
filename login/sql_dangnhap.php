@@ -19,7 +19,12 @@ if (isset($_POST['userId'])) {
     
     session_start();
     $_SESSION['userId'] = $userId;
-    echo "Bạn đã đăng nhập thành công. <a href='log/log_tour.php'>Nhấp vào đây để truy cập</a>";
-    exit;
+// Redirect to the desired page based on the user type
+if ($userId == "admin") {
+    header("Location: http://localhost/BTKT/admin/admin.php");
+} else {
+    header("Location: http://localhost/BTKT/login/log/log_tour.php");
+}
+exit;
 }
 ?>

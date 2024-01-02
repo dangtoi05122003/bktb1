@@ -5,13 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-<style>
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-    }
-</style>
+
+
 
 </head>
 <body>
@@ -23,16 +18,11 @@
       <a class="navbar-brand" href="http://localhost/BTKT/tour.php">Zakart.online</a>
 
       <!-- Nút kích hoạt offcanvas -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas">
-          <span class="navbar-toggler-icon"></span>
-      </button>
+
 
       <!-- Offcanvas -->
-      <div class="offcanvas offcanvas-start" id="menuOffcanvas">
-          <div class="offcanvas-header">
-              <h5 class="offcanvas-title">Menu</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-          </div>
+
+
           <div class="offcanvas-body">
               <!-- Các mục menu -->
               <ul class="navbar-nav">
@@ -54,19 +44,17 @@
                   
               </ul>
           </div>
-      </div>
+    
 
       <!-- Ô tìm kiếm -->
-      <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Tìm kiếm</button>
-      </form>
+      <form class="d-flex" method="GET" action="search.php">
+            <input class="form-control me-2" type="search" name="keyword" placeholder="Tìm kiếm" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Tìm kiếm</button>
+        </form>
   </div>
 </nav>
 </div>
   <hr>
-<div class="detail-header 1">
-  <input hidden value="48126" id="POST_ID" />
   
 
   <h1>
@@ -75,15 +63,12 @@
   </h1>
   <div class="share">
       <p class="share-label">Share:</p>
-      <a class="twitter-share" href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-      <a class="fb-share" href="https://www.facebook.com/sharer/sharer.php?u=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
   </div>
 
-  <div class="full-question">
       
   </div>
 
-  <div class="question-images ">
+
       
       
 
@@ -629,7 +614,7 @@
   
 
   
-      <component-laminkid-widget object-id="214"></component-laminkid-widget>
+
   
 
   
@@ -729,15 +714,6 @@
               
           
       </div>
-      <!-- <div class="tags-thread">
-          
-              
-                  <vue-tag url="sot-ret" name="Sốt rét" template="1" excluded="48126"></vue-tag>
-              
-          
-              
-                  <vue-tag url="dich-benh" name="Dịch bệnh" template="2" excluded="48126"></vue-tag>
-              
           
               
           
@@ -753,19 +729,12 @@
           
               
           
-      </div> -->
-  
-  <!--  -->
+
 
 </div>
 
 
-              <!-- <div class="p-b-md series-nav section-inner">
-  <div class="footer">
-      
-      
-  </div>
-</div> -->
+
               
                   
                       <section class="top-list post-related">
@@ -787,14 +756,7 @@
                           <div id="vue-fast-bootstrap-2">
                               <div class="col-md-12">
                                   <fast-form-render lang=vi service-pack=0 xander-url=/tin-tuc/thong-tin-suc-khoe/suc-khoe-tong-quat/suc-khoe-cho-nguoi-di-du-lich-nhung-dieu-can-biet/></fast-form-render>
-                                  <!-- <div id="fast-form-render">
-                                      <div class="m-t-xl">
-                                          <div class="loader loading">
-                                              <div class="spinner"></div>
-                                              <p class="text-center m-b-lg">Đang tải về, vui lòng đợi...</p>
-                                          </div>
-                                      </div>
-                                  </div> -->
+
                               </div>
                           </div>
                       </div>
@@ -898,258 +860,13 @@
     
       
 
-<script id="login-overlay-template" type="text/html">
 
-<div class="has-account-type-selector">
-  <ul class="tab-content-triggers">
-    <li><a href="#signup-tab" class="active"><i class="fa fa-user-plus" aria-hidden="true"></i> Đăng ký</a></li>
-    <li><a href="#login-tab"><i class="fa fa-sign-in" aria-hidden="true"></i> Đăng nhập</a></li>
-  </ul>
 
-  <div class="tab-content-container">
-
-    <div id="login-tab" class="tab-content">
-      <div class="for-email-existed">
-        <p>Bạn đã có tài khoản đăng ký tại website với email này. Vui lòng đăng nhập để sử dụng đầy đủ chức năng của website. Sau khi đăng nhập, bạn sẽ được đưa trở lại trang trước. Nội dung bạn vừa viết đã được lưu lại vào trình duyệt và sẽ không bị mất đi.</p>
-      </div>
-
-      <form method="post" action="http://zakart.online/login/login.html" name="login">
-        <div class="form-row">
-          <div class="form-field">
-            <label>
-              Email:
-            </label>
-            <div class="form-field-input">
-              <input type="text" name="email" required />
-            </div>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-field">
-            <label>
-              Mật khẩu:
-            </label>
-            <div class="form-field-input">
-              <input type="password" name="password" required></input>
-              <p>
-                <a class="reset-password-link" href="http://zakart.online/login/login.html">Quên mật khẩu?</a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="button-row">
-          <button type="submit">Đăng nhập</button>
-        </div>
-        <hr class="form-hr" />
-        <div class="button-row">
-          <button type="button" name="facebook" data-link="http://zakart.online/login/login.html" class="button-facebook"><i class="fa fa-website" aria-hidden="true"></i> Đăng nhập qua website</button>
-        </div>
-      </form>
-    </div>
-
-    <div id="signup-tab" class="tab-content active">
-
-      <div class="instruction">
-        <p>
-          Chào mừng bạn đến với website!
-        </p>
-
-        <div class="for-source-register_place">
-          <p>
-            Sau khi mở tài khoản, bạn có thể dễ dàng cập nhật, chỉnh sửa trang thông tin khách hàng hoặc doanh nghiệp mà bạn quản lý trên ViCare. Bạn cũng có thể gửi phản hồi nhận xét của khách hàng, và tham gia giải đáp các thắc mắc về y tế, sức khỏe của cộng đồng.
-          </p>
-          <p>
-            Bạn cần chọn loại tài khoản là "Quản lý hồ sơ".
-          </p>
-        </div>
-        <div class="for-source-register_prof">
-          <p>
-            Sau khi mở tài khoản, bạn có thể dễ dàng cập nhật, chỉnh sửa trang thông tin của mình trên website. Bạn cũng có thể gửi phản hồi nhận xét của bệnh nhân, và tham gia giải đáp các thắc mắc về y tế, sức khỏe của cộng đồng.
-          </p>
-          <p>
-            Bạn cần chọn loại tài khoản là "tour".
-          </p>
-        </div>
-        <div class="for-source-favourite">
-          <p>
-            Sau khi mở tài khoản, bạn có thể lưu lại cơ sở và căn bệnh đáng quan tâm, cũng như sử dụng đầy đủ các chức năng, dịch vụ của website
-          </p>
-        </div>
-        <div class="for-source-promotion">
-          <p>
-            Bạn hãy mở tài khoản hoặc đăng nhập để nhận các ưu đãi về tour, chăm sóc sức khỏe hấp dẫn từ website!
-          </p>
-        </div>
-        <div class="for-source-others">
-          <p>
-            Mở tài khoản dễ dàng, nhanh chóng với một form duy nhất để có thể sử dụng đầy đủ các chức năng và dịch vụ của zakart.online
-          </p>
-        </div>
-
-      </div>
-
-      <form method="post" action="http://zakart.online/login/login.html" name="signup">
-        <div class="form-row">
-          <div class="form-field">
-            <label>
-              Loại tài khoản:
-            </label>
-            <div class="form-field-input">
-              <select class="account-type-selector" name="type">
-                <option value="user">Thành viên</option>
-                <option value="professional">quản lý</option>
-                <option value="place">khách hàng / người đại diện</option>
-              </select>
-            </div>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-field">
-            <label>
-              Họ và tên:
-            </label>
-            <div class="form-field-input">
-              <input type="text" name="name" id="name" data-rules="required" class="validate" />
-              <p class="validation-error help-block"></p>
-            </div>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-field">
-            <label>
-              Điện thoại:
-            </label>
-            <div class="form-field-input">
-              <input type="text" name="mobile_phone" id="mobile_phone" data-rules="required" />
-              <p class="validation-error help-block"></p>
-            </div>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-field">
-            <label>
-              Email:
-            </label>
-            <div class="form-field-input">
-              <input name="email" type="text" id="email" data-rules="required|valid_email" class="validate" />
-              <p class="validation-error help-block"></p>
-            </div>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-field">
-            <label>
-              Mật khẩu:
-            </label>
-            <div class="form-field-input">
-              <input type="password" name="password" id="password" title="Mật khẩu cần có ít nhất 5 kí tự" placeholder="Mật khẩu cần có ít nhất 5 kí tự" data-display="Mật khẩu" data-rules="required|min_length[5]" class="validate"></input>
-              <p class="validation-error help-block"></p>
-            </div>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-field">
-            <label>
-              Xác nhận lại mật khẩu:
-            </label>
-            <div class="form-field-input">
-              <input type="password" name="confirm_password" id="confirm_password" title="Nhập lại mật khẩu" placeholder="Nhập lại mật khẩu" data-rules="required|matches[password]" class="validate"></input>
-              <p class="validation-error help-block"></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="for-account-type-place">
-          <hr class="form-hr" />
-          <div class="form-row">
-            <div class="form-field">
-              <label>
-                Tên Khách hàng / người đại diện:
-              </label>
-              <div class="form-field-input">
-                <input type="text" name="place_name" value="<%= meta.placeName %>"/>
-              </div>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-field">
-              <label>
-                Địa chỉ:
-              </label>
-              <div class="form-field-input">
-                <input type="text" name="place_add" value="<%= meta.placeAdd %>"/>
-              </div>
-            </div>
-          </div>
-          <p>Vui lòng cung cấp đầy đủ thông tin để chúng tôi có thể liên hệ và hỗ trợ bạn.</p>
-        </div>
-
-        <div class="for-account-type-professional">
-          <hr class="form-hr" />
-          <div class="form-row">
-            <div class="form-field">
-              <label>
-                Tour:
-              </label>
-              <div class="form-field-input">
-                <input type="text" name="prof_spec" value="<%= meta.profSpec %>"/>
-              </div>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-field">
-              <label>
-                Nơi du lịch:
-              </label>
-              <div class="form-field-input">
-                <input type="text" name="prof_place" value="<%= meta.profPlace %>" />
-              </div>
-            </div>
-          </div>
-          <p>Vui lòng cung cấp đầy đủ thông tin để chúng tôi có thể liên hệ và hỗ trợ bạn.</p>
-        </div>
-        <div class="button-row">
-          <button type="submit" name="register">Đăng ký</button>
-        </div>
-        <hr class="form-hr" />
-        <div class="button-row">
-          <button type="button" name="facebook" data-link="http://zakart.online/login/login.html" class="button-facebook"><i class="fa fa-website" aria-hidden="true"></i> Đăng ký qua website</button>
-        </div>
-      </form>
-
-    </div>
-  </div>
-</div>
-</script>
-
-<script type="text/html" id="signup-confirmation-template">
-<div class="form-success">
-  <h4><i class="fa fa-check-square-o"></i> Đăng ký mở tài khoản thành công!</h4>
-  <p>Chào mừng bạn đến với Website!</p>
-  <div class="for-account-type-professional">
-    <p>Cảm ơn bạn đã gửi thông tin. Chúng tôi sẽ liên hệ với bạn để xác nhận trong thời gian sớm nhất.</p>
-  </div>
-  <div class="for-account-type-place">
-    <p>Cảm ơn bạn đã gửi thông tin. Chúng tôi sẽ liên hệ với bạn để xác nhận trong thời gian sớm nhất.</p>
-  </div>
-  <p>
-    <strong>Họ và tên:</strong> <%= name %>
-    <br />
-    <strong>Số điện thoại:</strong>
-    <%= phone ? phone : '<em>chưa cung cấp</em>' %>
-    <br />
-    <strong>Email:</strong> <%= email %>
-  </p>
-  <div class="button-row">
-    <a href="<%= next %>" class="button">OK <i class="fa fa-check" aria-hidden="true"></i></a>
-  </div>
-</div>
-</script>
 
 
 
     
-    <input type='hidden' name='csrfmiddlewaretoken' value='LQZp3P6Nnr3dQpjBfxEBhXZ8rydN4rweLvtLfGPVAjovpzJFazFWt7hUlVC7D53q' />
+
   </div>
 
   
@@ -1169,14 +886,6 @@
   </div>
 </div>
 
-<div class="global-thread-create-cta swap-position">
-      <div class="coccoc-alo-ph-circle-fill" style="background-color: #337ab7">&nbsp;</div>
-      <a id="hotline-cta" href="#" rel="nofollow" class="hotline-cta-swap">
-          <div class="coccoc-alo-ph-img-circle" style="background-color: #337ab7; transform: scaleX(-1)">
-              <div class="phone"></div>
-          </div>
-      </a>
-  </div>
 
 
   <div class="coppyright">

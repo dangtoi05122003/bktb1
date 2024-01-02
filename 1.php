@@ -15,60 +15,7 @@
         }
     </style>
 	<!--chủ đề-->
-    <style>
-        .header {
-            background-color: yellow;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            padding: 10px;
-            background-clip: content-box;
-        }
 
-        .menu {
-            order: 1;
-            flex-basis: 30%;
-        }
-
-        .hot-places {
-            order: 2;
-            flex-basis: 40%;
-            text-align: center;
-        }
-
-        .search-box {
-            order: 3;
-            display: flex;
-            align-items: center;
-            flex-basis: 30%;
-            justify-content: flex-end;
-        }
-
-        .search-input {
-            max-width: 200px;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 16px;
-        }
-
-        .search-button {
-            padding: 8px 16px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-            margin-left: 8px;
-        }
-
-        .search-button:hover {
-            background-color: #45a049;
-        }
-        
-    </style>
 	
 </head>
 <body>
