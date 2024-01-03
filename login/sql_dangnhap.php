@@ -19,12 +19,15 @@ if (isset($_POST['userId'])) {
     
     session_start();
     $_SESSION['userId'] = $userId;
-// Redirect to the desired page based on the user type
-if ($userId == "admin") {
-    header("Location: http://localhost/BTKT/admin/admin.php");
-} else {
-    header("Location: http://localhost/BTKT/login/log/log_tour.php");
-}
-exit;
+    
+    // Redirect to the desired page based on the user type
+    if ($userId == "admin") {
+        header("Location: http://localhost/BTKT/admin/admin.php");
+    } elseif ($userId == "adminvip") {
+        header("Location: http://localhost/BTKT/quan_ly_dang_nhap_khach_hang/admin_vip.php");
+    } else {
+        header("Location: http://localhost/BTKT/login/log/log_tour.php");
+    }
+    exit;
 }
 ?>

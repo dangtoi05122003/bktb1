@@ -74,7 +74,7 @@ button {
     </style>
     <div class="container">
         <h1>Đặt vé du lịch</h1>
-        
+    <form id="booking-form" action="connect.php" method="POST">
         <div class="booking-details">
             <h2>Thông tin đặt chỗ</h2>
             <div class="row">
@@ -142,7 +142,7 @@ button {
         <input type="text" id="discount-code" placeholder="Nhập mã giảm giá">
         <button id="checkout">Thanh toán</button>
     </div>
-
+    </form>
     <script src="script.js"></script>
     <script>
         function updateTotalAmount() {
