@@ -14,8 +14,8 @@ if ($conn->connect_error) {
 
 // Xử lý biểu mẫu thêm người dùng
 if (isset($_POST['userId']) && isset($_POST['password'])) {
-    $userId = $_POST['userId'];
-    $password = $_POST['password'];
+    $userId = $conn->real_escape_string($_POST['userId']);
+    $password = $conn->real_escape_string($_POST['password']);
 
     // Câu lệnh SQL để thêm người dùng
     $tsql = "INSERT INTO dangnhap (userId, password) VALUES ('$userId', '$password')";
@@ -28,11 +28,11 @@ if (isset($_POST['userId']) && isset($_POST['password'])) {
 }
 
 // Xử lý biểu mẫu xóa người dùng
-if (isset($_POST['userId'])) {
-    $userId = $_POST['userId'];
+if (isset($_POST['deleteUserId'])) {
+    $deleteUserId = $conn->real_escape_string($_POST['deleteUserId']);
 
     // Câu lệnh SQL để xóa người dùng
-    $dsql = "DELETE FROM dangnhap WHERE userId = '$userId'";
+    $dsql = "DELETE FROM dangnhap WHERE userId = '$deleteUserId'";
 
     if ($conn->query($dsql) === TRUE) {
         echo "Xóa người dùng thành công";
